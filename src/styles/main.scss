@@ -1,0 +1,19 @@
+@import "compass";
+@import "reset";
+@import "colors";
+@import "fonts";
+@import "base";
+
+/* #General Styles
+================================================== */
+.hidden {
+  display: none;
+}
+
+.noRight {
+  margin-right: 0px !important;
+}
+
+.clear {
+  clear:both;
+}

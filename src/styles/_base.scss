@@ -1,0 +1,23 @@
+$sm: "only screen and (max-width : 320px)";
+$md: "only screen and (max-width : 768px)";
+$lg: "only screen and (max-width : 1024px)";
+
+.container {
+  width:100%;
+  margin:0 auto;
+  background: #333333;
+  max-width: 1440px;
+  @media #{$sm} {
+    max-width: 90%;
+  }
+  @media #{$md} {
+    max-width: 90%;
+  }
+  @media #{$lg} {
+    max-width: 90%;
+  }
+}
+
+.one-col {
+  width: 100%;
+}

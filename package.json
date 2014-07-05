@@ -1,0 +1,23 @@
+{
+	"name": "Grunt_Template",
+	"version": "0.0.1",
+	"description": "Template",
+	"main": "Gruntfile.js",
+	"author": "Dan Stauffer",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/dstauffer/Grunt-Template"
+  },
+	"devDependencies": {
+		"grunt": "~0.4.1",
+		"grunt-contrib-compass": "latest",
+    "grunt-contrib-jade":  "latest",
+		"grunt-contrib-watch": 	"latest",
+		"grunt-contrib-coffee": "latest",
+    "grunt-contrib-copy": "latest",
+		"grunt-contrib-uglify": "latest",
+		"grunt-contrib-jshint": "latest",
+		"grunt-contrib-clean":  "latest",
+		"grunt-coffeelint": 	"latest"
+	}
+}
