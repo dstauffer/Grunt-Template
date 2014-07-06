@@ -1,0 +1,10 @@
+#main-nav {
+  background: $gray;
+  color: $white;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  h3 {
+    line-height: 60px;
+  }
+}
