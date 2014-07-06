@@ -21,28 +21,14 @@ html(lang='en')
 
     // Scripts
     // ==================================================
-    script(src='javascripts/vendor/jquery-1.11.0.min.js')
-    script(src='javascripts/vendor/jquery.transit.js')
-    script(src='javascripts/lib/browserDetection.min.js')
-
+    script(src='javascripts/vendor/requirejs/require.js')
+    script(src='javascripts/require_config.js')
     <!--[if lt IE 10]>
     <link href="css/ie8Styles.min.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="javascripts/lib/ie8Script.min.js"></script>
     <![endif]-->
-    <!--[if gt IE 9]>
-    <script type="text/javascript" src="javascripts/lib/main.min.js"></script>
-    <![endif]-->
-    <!--[if !IE]> --><script type="text/javascript" src="javascripts/lib/main.min.js"></script><!-- <![endif]-->
-
     // Favicons
     // ==================================================
     link(rel='shortcut icon', href='images/favicon.ico')
 
   body#home-page
-    div.container
-      h1
-        |Grunt Template
-
-
-
-

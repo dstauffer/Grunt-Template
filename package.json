@@ -8,8 +8,12 @@
     "type" : "git",
     "url" : "https://github.com/dstauffer/Grunt-Template"
   },
+  "dependencies": {
+    "requirejs": "latest"
+  },
 	"devDependencies": {
 		"grunt": "~0.4.1",
+    "grunt-contrib-requirejs": "latest",
 		"grunt-contrib-compass": "latest",
     "grunt-contrib-jade":  "latest",
 		"grunt-contrib-watch": 	"latest",
