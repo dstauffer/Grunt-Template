@@ -40,9 +40,13 @@ module.exports = function(grunt) {
         options: {
           pretty: true
         },
-        files: {
-            "bin/index.html": "src/index.jade"
-        }
+        files: [ {
+          cwd: "src/",
+          src: "**/*.jade",
+          dest: "bin/",
+          expand: true,
+          ext: ".html"
+        } ]
       }
     },
     compass: {
