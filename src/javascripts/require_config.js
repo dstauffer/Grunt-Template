@@ -2,7 +2,7 @@ require.config({
   paths: {
     "jquery": "javascripts/vendor/jquery/dist/jquery.min",
     "transit": "javascripts/vendor/jquery.transit/jquery.transit",
-    "browserDetect": "javascripts/vendor/lib/browserDetection.min"
+    "browserDetect": "javascripts/lib/browserDetection.min"
   },
   shim: {
     "transit": {

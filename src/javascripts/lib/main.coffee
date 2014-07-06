@@ -1,8 +1,11 @@
-$(document).ready () ->
-
-  $(window).load () ->
-    console.log "Window Loaded"
+define("javascripts/lib/main.min",
+[
+  "browserDetect"
+],
+(
+  BrowserDetect
+) ->
   $(window).resize () ->
     console.log "Window Resized"
-
+)
 

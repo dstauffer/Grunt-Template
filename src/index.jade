@@ -32,3 +32,10 @@ html(lang='en')
     link(rel='shortcut icon', href='images/favicon.ico')
 
   body#home-page
+    script.
+      require(['jquery'], function($) {
+        $(document).ready(function() {
+          require(['javascripts/lib/main.min'], function() {
+          });
+        });
+      });
