@@ -1,0 +1,86 @@
+doctype html
+html(lang='en')
+  head
+
+    // Basic Page Needs
+    // ==================================================
+    meta(charset='utf-8')
+    title Template
+    meta(name='description', content='')
+    meta(name='author', content='')
+
+    // Mobile Specific Metas
+    // ==================================================
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="format-detection", content="telephone=no")
+
+    // CSS
+    // ==================================================
+
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Bitter:400,700')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic')
+    link(rel='stylesheet', href='css/main.css')
+
+    // Scripts
+    // ==================================================
+    script(src='javascripts/vendor/requirejs/require.js')
+    script(src='javascripts/require_config.js')
+    <!--[if lt IE 10]>
+    <link href="css/ie8Styles.min.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="javascripts/lib/ie8Script.min.js"></script>
+    <![endif]-->
+    // Favicons
+    // ==================================================
+    link(rel='shortcut icon', href='images/favicon.ico')
+
+  body#home-page
+    script.
+      require(['jquery'], function($) {
+        $(document).ready(function() {
+          require(['javascripts/lib/main.min'], function() {
+          });
+        });
+      });
+
+    div.one-col#main-nav
+      div.container
+        h3 DEWS
+    div.one-col#aspot-banner
+      h1 Forms Man
+        p Forms dude
+    div.one-col.section-header
+      div.container
+        h2 These are some forms
+        p For real though
+    div.one-col.main-content
+      div.container
+        form
+          label(for="name") Text Input
+          input(type="text", name="name")
+          label Select Menu
+          select
+            option Option 1
+            option Option 2
+            option Option 3
+          label Yes
+          input(type="radio", name="radioExample")
+          label No
+          input(type="radio", name="radioExample")
+          label Textarea
+          textarea default
+
+          input(type="submit")
+
+    div.one-col#footer
+      div.container
+        p &copy; 2014 Footer Content
+
+
+
+
+
+
+
+
+
