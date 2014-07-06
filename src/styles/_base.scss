@@ -17,6 +17,52 @@ $lg: "only screen and (max-width : 1024px)";
   }
 }
 
-.one-col {
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix, .row {
+  zoom: 1;
+  &:before, &:after {
+    content: "\0020";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  &:after { clear: both; }
+}
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.full-col {
   width: 100%;
 }
+
+.two-col {
+  width: 50%;
+}
+
+.three-col {
+  width: 25%;
+}
+
+.four-col {
+  width: 33.33%;
+}
+
+.six-col {
+  width: 50%;
+}
+
+
