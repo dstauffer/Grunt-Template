@@ -43,36 +43,53 @@ html(lang='en')
         });
       });
 
-    div.one-col#main-nav
+    div.full-col#main-nav
       div.container
         h3 DEWS
-    div.one-col#aspot-banner
+    div.full-col#aspot-banner
       h1 Forms Man
         p Forms dude
-    div.one-col.section-header
+    div.full-col.section-header
       div.container
         h2 These are some forms
         p For real though
-    div.one-col.main-content
+    div.full-col.main-content
       div.container
         form
-          label(for="name") Text Input
-          input(type="text", name="name")
-          label Select Menu
-          select
-            option Option 1
-            option Option 2
-            option Option 3
-          label Yes
-          input(type="radio", name="radioExample")
-          label No
-          input(type="radio", name="radioExample")
-          label Textarea
-          textarea default
+          div.six-col
+            label(for="textExample")
+              span Text Input
+              input(type="text", name="textExample", placeholder="text")
+          div.six-col
+            label(for="textExample")
+              span Select Menu
+              select(name="selectExample")
+                option Option 1
+                option Option 2
+                option Option 3
+          fieldset.six-col
+            legend Radio Question Set
+            div
+              label(for="radio1")
+                span Yes
+                input(type="radio", name="radioExample")#radio1
+
+            div
+              label(for="radio2")
+                span No
+                input(type="radio", name="radioExample")#radio2
+          div.six-col
+            label(for="checkExample")
+              span I like banana
+              input(type="checkbox", name="checkExample")
+          div.six-col
+            label(for="textAreaExample")
+              span Textarea
+              textarea(name="textAreaExample", placeholder="text")
 
           input(type="submit")
 
-    div.one-col#footer
+    div.full-col#footer
       div.container
         p &copy; 2014 Footer Content
 
