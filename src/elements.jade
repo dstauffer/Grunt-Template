@@ -54,35 +54,35 @@ html(lang='en')
         h2 These are some forms
         p For real though
     div.full-col.main-content
-      div.container
+      div.container#contact-forms
         form
-          div.six-col
+          div.six-col.form-element
             label(for="textExample")
               span Text Input
               input(type="text", name="textExample", placeholder="text")
-          div.six-col
+          div.six-col.form-element
             label(for="textExample")
               span Select Menu
               select(name="selectExample")
                 option Option 1
                 option Option 2
                 option Option 3
-          fieldset.six-col
-            legend Radio Question Set
-            div
-              label(for="radio1")
-                span Yes
-                input(type="radio", name="radioExample")#radio1
-
-            div
-              label(for="radio2")
-                span No
-                input(type="radio", name="radioExample")#radio2
-          div.six-col
+          div.six-col.form-element
+            fieldset
+              legend Radio Question Set
+              div
+                label(for="radio1")
+                  span Yes
+                  input(type="radio", name="radioExample")#radio1
+              div
+                label(for="radio2")
+                  span No
+                  input(type="radio", name="radioExample")#radio2
+          div.six-col.form-element
             label(for="checkExample")
               span I like banana
               input(type="checkbox", name="checkExample")
-          div.six-col
+          div.six-col.form-element
             label(for="textAreaExample")
               span Textarea
               textarea(name="textAreaExample", placeholder="text")

@@ -56,6 +56,18 @@ img.retina {
   }
 }
 
+#contact-forms {
+  max-width: 700px;
+  form {
+    .form-element {
+      width: 48%;
+    }
+    >div:nth-child(odd) {
+      margin-right: 4%;
+    }
+  }
+}
+
 @import "components/ui-elements";
 @import "views/_footer";
 @import "views/_home-page";
