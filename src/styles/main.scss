@@ -26,6 +26,9 @@ img.retina {
 
 #aspot-banner {
   height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
   overflow: hidden;
   display: table;
   color: $white;
