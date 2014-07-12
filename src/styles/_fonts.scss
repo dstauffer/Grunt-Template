@@ -9,6 +9,9 @@ $default-text-shadow-v-offset: 1px;
 h1 {
   font-size: 40px;
   line-height: 44px;
+  &.h-1 {
+    text-align: center;
+  }
 }
 
 h2 {
@@ -47,6 +50,10 @@ a {
 
 .bold {
   font-weight:bold;
+}
+
+.caps {
+  text-transform: uppercase;
 }
 
 .underline {
