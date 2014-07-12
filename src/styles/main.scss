@@ -1,9 +1,10 @@
 @import "compass";
 @import "normalize";
 @import "reset";
+@import "base";
 @import "colors";
 @import "fonts";
-@import "base";
+
 
 /* #General Styles
 ================================================== */
@@ -50,6 +51,12 @@ img.retina {
   background: $light-gray;
   color: $dark-gray-text;
   padding: 30px 0px;
+  @media #{$md} {
+    text-align: center;
+  }
+  @media #{$sm} {
+    text-align: center;
+  }
 }
 
 .section-header {
@@ -57,9 +64,6 @@ img.retina {
   background: $white;
   position: relative;
   @include box-shadow(rgba(0, 0, 0, 0.15) 0 2px 3px);
-  h2 {
-    padding: 0 0 10px 0;
-  }
 }
 
 #contact-forms {
