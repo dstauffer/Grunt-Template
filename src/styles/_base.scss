@@ -50,6 +50,10 @@ $xl: "only screen and (max-width : 1280px)";
   height: 0;
 }
 
+.column {
+  float: left;
+}
+
 .full-col {
   width: 100%;
 }
